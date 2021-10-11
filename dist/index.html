@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
-    <script defer src="app.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/all.min.js"></script>
   </head>
   <body class="debug-screens" dir="rtl">
     <nav
@@ -17,7 +19,7 @@
       id="nav"
     >
       <ul class="flex flex-row gap-7">
-        <li class="nav__link-active">
+        <li class="nav__item-active">
           <a href="#" class="text-primaryColor">خانه</a>
         </li>
         <li class="">
@@ -59,12 +61,12 @@
     </nav>
 
     <header
-      class="relative flex flex-col h-screen text-center text-white bg-center bg-cover  gap-7 pt-52"
+      class="relative flex flex-col h-screen gap-8 pt-48 text-center text-white bg-center bg-cover "
     >
-      <p class="">ما خلاق هستیم</p>
-      <h2 class="text-6xl font-bold">شرکت دیجیتالی خلاق</h2>
-      <p class="self-center w-1/3">
-        با بیش از 10 سال سابقه کار و فعال حوزه استارت آپ و طراح بیش از 50 سایت
+      <p class="text-2xl text-white">ما خلاق هستیم</p>
+      <h2 class="text-6xl">شرکت دیجیتالی خلاق</h2>
+      <p class="self-center w-1/3 text-lg text-white">
+        با بیش از ۱۰ سال سابقه کار و فعال حوزه استارت آپ و طراح بیش از ۵۰ سایت
         هستم.
       </p>
       <div class="mt-3">
@@ -72,5 +74,52 @@
         <a href="#" class="mx-2 btn">شروع کنید</a>
       </div>
     </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="title-box">
+          <h2>به شرکت ما خوش آمدید</h2>
+          <p class="title-text">ما کیستیم و چه کاری انجام میدهیم</p>
+          <p class="w-3/4 mx-auto mt-12">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+          </p>
+        </div>
+        <div class="flex flex-col justify-around gap-5 md:flex-row">
+          <div class="flex flex-col gap-5 px-3 py-6">
+            <span class="self-center p-5 border-2 border-gray-100 rounded-full"
+              ><i class="far fa-pencil-paintbrush"></i
+            ></span>
+            <h3>طراحی خلاقانه</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
+            </p>
+          </div>
+          <div class="flex flex-col gap-5 px-3 py-6">
+            <span class="self-center p-5 border-2 border-gray-100 rounded-full"
+              ><i class="far fa-crown"></i
+            ></span>
+            <h3>برند سازی</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
+            </p>
+          </div>
+          <div class="flex flex-col gap-5 px-3 py-6">
+            <span class="self-center p-5 border-2 border-gray-100 rounded-full"
+              ><i class="far fa-desktop"></i
+            ></span>
+            <h3>طراحی وبسایت</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

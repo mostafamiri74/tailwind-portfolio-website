@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-  /* @font-face {
-    font-family: Oswald;
-    src: url(/dist/fonts/Oswald/Oswald-Bold.ttf) format("truetype");
-  } */
-
-  body {
-    background-color: #212f49;
+  @font-face {
+    font-family: "byekan";
+    src: url("/dist/fonts/byekan.ttf") format("truetype");
+    font-weight: 400;
   }
 
-  .container {
-    background-color: #f3f4f6;
+  @font-face {
+    font-family: "byekan";
+    src: url("/dist/fonts/byekan-bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+
+  body {
+    font-family: byekan;
+    @apply overflow-x-hidden;
   }
 
   header {
@@ -25,24 +29,43 @@
       url("../img/bg2.jpg");
   }
 
+  .container {
+    @apply py-32 mx-auto text-center;
+  }
+
   .nav-scrolled {
     @apply text-black bg-white !important;
+  }
+
+  .title-box {
+    @apply mb-20;
+  }
+
+  .title-text {
+    @apply text-lg;
   }
 
   h1 {
     @apply mb-6 text-3xl sm:text-5xl xl:text-6xl font-headline dark:text-yellow-200;
   }
   h2 {
-    @apply mb-3 text-xl sm:text-2xl md:text-3xl xl:text-4xl font-headline dark:text-yellow-200;
+    font-weight: 700;
+    @apply mb-4 text-xl sm:text-2xl md:text-3xl xl:text-4xl font-headline dark:text-yellow-200;
   }
   h3 {
-    @apply mb-4 text-xl md:mb-2 md:text-2xl xl:text-3xl font-headline dark:text-yellow-200;
+    font-weight: 700;
+    @apply mb-3 text-xl md:mb-2 md:text-2xl xl:text-2xl font-headline dark:text-yellow-200;
   }
   p {
+    color: #7f7f7f;
     @apply text-lg xl:text-xl 2xl:text-2xl dark:text-gray-300;
   }
   li {
+    font-weight: 700;
     @apply text-sm md:text-base xl:text-sm;
+  }
+  svg {
+    @apply text-4xl text-primaryColor !important;
   }
 
   .btn {
