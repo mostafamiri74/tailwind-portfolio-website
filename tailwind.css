@@ -30,7 +30,7 @@
   }
 
   .container {
-    @apply py-32 mx-auto text-center;
+    @apply px-12 py-24 mx-auto text-center;
   }
 
   .nav-scrolled {
@@ -45,6 +45,23 @@
     @apply text-lg;
   }
 
+  .skills__right-side {
+    background-image: url("../img/1.jpg");
+  }
+
+  .primary-gradient {
+    background: linear-gradient(to left, #2aafc0, #6976c5);
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .border-x {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+  }
+
   h1 {
     @apply mb-6 text-3xl sm:text-5xl xl:text-6xl font-headline dark:text-yellow-200;
   }
@@ -54,11 +71,15 @@
   }
   h3 {
     font-weight: 700;
-    @apply mb-3 text-xl md:mb-2 md:text-2xl xl:text-2xl font-headline dark:text-yellow-200;
+    @apply mb-3 text-xl md:mb-2 md:text-xl xl:text-2xl font-headline dark:text-yellow-200;
+  }
+  h5 {
+    font-weight: 700;
+    @apply text-sm md:text-base xl:text-lg font-headline dark:text-yellow-200;
   }
   p {
     color: #7f7f7f;
-    @apply text-lg xl:text-xl 2xl:text-2xl dark:text-gray-300;
+    @apply text-base xl:text-lg 2xl:text-xl dark:text-gray-300;
   }
   li {
     font-weight: 700;
