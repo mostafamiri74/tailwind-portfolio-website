@@ -49,8 +49,10 @@
     background-image: url("../img/1.jpg");
   }
 
-  .primary-gradient {
+  .primary-gradient,
+  .is-active {
     background: linear-gradient(to left, #2aafc0, #6976c5);
+    color: white;
   }
 
   .border-bottom {
@@ -60,6 +62,10 @@
   .border-x {
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
+  }
+
+  .border-gray {
+    border: 1px solid #eeeeee;
   }
 
   h1 {

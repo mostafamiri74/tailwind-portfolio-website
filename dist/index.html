@@ -6,6 +6,12 @@
     <title>Mini Project</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/isolde.css" />
+
+    <script defer type="module">
+      import isolde from "./js/isolde.js";
+      const isoldejs = new isolde();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
@@ -256,5 +262,132 @@
       </div>
     </section>
     <!-- end achievements section -->
+
+    <!-- begin portfolio section -->
+    <section id="portfolio" class="">
+      <div class="container px-0">
+        <div class="title-box">
+          <h2>نمونه کارهای ما</h2>
+          <p class="title-text">پروژه های اخیر</p>
+        </div>
+        <div class="mb-14">
+          <ul
+            class="flex flex-row gap-8 px-6 py-3 mx-auto rounded-full  w-min border-gray"
+          >
+            <li class="">
+              <a
+                class="px-4 py-2 rounded-full cursor-pointer is-active"
+                data-isolde-link="all"
+                >همه</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="px-4 py-2 rounded-full cursor-pointer"
+                data-isolde-link="brand"
+                >برند</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="px-4 py-2 rounded-full cursor-pointer"
+                data-isolde-link="design"
+                >طراحی</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="px-4 py-2 rounded-full cursor-pointer"
+                data-isolde-link="graphic"
+                >گرافیک</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="isolde" class="flex flex-row flex-wrap isolde-default">
+          <div class="w-1/4 p-1 section-portfolio__card" data-isolde-el="brand">
+            <img
+              class=""
+              src="img/portfolio/1-1-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div
+            class="w-1/4 p-1 section-portfolio__card"
+            data-isolde-el="design"
+          >
+            <img
+              class=""
+              src="img/portfolio/2-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div
+            class="w-1/4 p-1 section-portfolio__card"
+            data-isolde-el="brand design"
+          >
+            <img
+              class=""
+              src="img/portfolio/3-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div class="w-1/4 p-1 section-portfolio__card" data-isolde-el="brand">
+            <img
+              class=""
+              src="img/portfolio/4-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div
+            class="w-1/4 p-1 section-portfolio__card"
+            data-isolde-el="graphic"
+          >
+            <img
+              class=""
+              src="img/portfolio/5-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div
+            class="w-1/4 p-1 section-portfolio__card"
+            data-isolde-el="graphic"
+          >
+            <img
+              class=""
+              src="img/portfolio/6-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div
+            class="w-1/4 p-1 section-portfolio__card"
+            data-isolde-el="graphic design"
+          >
+            <img
+              class=""
+              src="img/portfolio/7-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+          <div class="w-1/4 p-1 section-portfolio__card" data-isolde-el="brand">
+            <img
+              class=""
+              src="img/portfolio/8-440x440.jpg"
+              alt="portfolio pucture"
+            />
+            <div class="section-portfolio__card__detail"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end portfolio section -->
   </body>
 </html>

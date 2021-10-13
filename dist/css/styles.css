@@ -202,7 +202,8 @@ select { /* 1 */
 Correct the inability to style clickable types in iOS and Safari.
 */
 
-button {
+button,
+[type='button'] {
   -webkit-appearance: button;
 }
 
@@ -591,8 +592,10 @@ header {
   background-image: url("../img/1.jpg");
 }
 
-.primary-gradient {
+.primary-gradient,
+  .is-active {
   background: linear-gradient(to left, #2aafc0, #6976c5);
+  color: white;
 }
 
 .border-bottom {
@@ -602,6 +605,10 @@ header {
 .border-x {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+.border-gray {
+  border: 1px solid #eeeeee;
 }
 
 h1 {
@@ -954,6 +961,10 @@ svg {
   margin-bottom: 1.75rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -978,6 +989,10 @@ svg {
   width: 33.333333%;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .w-3\/4 {
   width: 75%;
 }
@@ -992,6 +1007,12 @@ svg {
 
 .w-full {
   width: 100%;
+}
+
+.w-min {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 @-webkit-keyframes spin {
@@ -1060,12 +1081,20 @@ svg {
   }
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-row {
   flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .justify-between {
@@ -1140,6 +1169,10 @@ svg {
   background-position: center;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1148,9 +1181,24 @@ svg {
   padding: 2rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-10 {
@@ -1166,6 +1214,16 @@ svg {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-6 {
