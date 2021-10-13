@@ -68,6 +68,10 @@
     border: 1px solid #eeeeee;
   }
 
+  .advantages__left-side {
+    background-image: url("../img/2-1.jpg");
+  }
+
   h1 {
     @apply mb-6 text-3xl sm:text-5xl xl:text-6xl font-headline dark:text-yellow-200;
   }
@@ -117,5 +121,54 @@
   }
   .btn-indigo {
     @apply bg-indigo-300 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-500;
+  }
+  label {
+  }
+  .tab-content {
+    max-height: 0;
+  }
+  /* :checked - resize to full height */
+  .tab input:checked ~ .tab-content {
+    max-height: 100vh;
+  }
+  /* Label formatting when open */
+  .tab input:checked + label {
+    background: linear-gradient(to left, #2aafc0, #6976c5);
+    @apply text-white border-l-2;
+  }
+  /* Icon */
+  .tab label::after {
+    float: left;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* Icon formatting - closed */
+  .tab input[type="checkbox"] + label::after {
+    content: "+";
+    font-weight: bold; /*.font-bold*/
+  }
+  .tab input[type="radio"] + label::after {
+    content: "+";
+    font-weight: bold; /*.font-bold*/
+  }
+  /* Icon formatting - open */
+  .tab input[type="checkbox"]:checked + label::after {
+    content: "-";
+    font-size: 1.8rem;
+    color: white; /*.text-grey-lightest*/
+  }
+  .tab input[type="radio"]:checked + label::after {
+    content: "-";
+    font-size: 1.8rem;
+    color: white; /*.text-grey-lightest*/
   }
 }

@@ -611,6 +611,10 @@ header {
   border: 1px solid #eeeeee;
 }
 
+.advantages__left-side {
+  background-image: url("../img/2-1.jpg");
+}
+
 h1 {
   margin-bottom: 1.5rem;
   font-family: ;
@@ -819,6 +823,58 @@ svg {
   transition-duration: 150ms;
 }
 
+label {
+}
+
+.tab-content {
+  max-height: 0;
+}
+
+/* :checked - resize to full height */
+
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* Label formatting when open */
+
+.tab input:checked + label {
+  background: linear-gradient(to left, #2aafc0, #6976c5);
+  border-left-width: 2px;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+/* Icon */
+
+.tab label::after {
+  float: left;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+/* Icon formatting - closed */
+
+.tab input[type="radio"] + label::after {
+  content: "+";
+  font-weight: bold; /*.font-bold*/
+}
+
+/* Icon formatting - open */
+
+.tab input[type="radio"]:checked + label::after {
+  content: "-";
+  font-size: 1.8rem;
+  color: white; /*.text-grey-lightest*/
+}
+
 .container {
   width: 100%;
 }
@@ -902,6 +958,10 @@ svg {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -963,6 +1023,10 @@ svg {
 
 .mb-14 {
   margin-bottom: 3.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -1129,6 +1193,10 @@ svg {
   align-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1268,6 +1336,14 @@ svg {
   line-height: 1;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -1276,6 +1352,10 @@ svg {
 .text-primaryColor {
   --tw-text-opacity: 1;
   color: rgba(42, 175, 192, var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 *, ::before, ::after {
