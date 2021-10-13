@@ -611,6 +611,10 @@ header {
   border: 1px solid #eeeeee;
 }
 
+.border-blue {
+  border: 1px solid #2aafc0;
+}
+
 .advantages__left-side {
   background-image: url("../img/2-1.jpg");
 }
@@ -1013,6 +1017,10 @@ label {
   margin-top: 3rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1043,6 +1051,10 @@ label {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-1\/2 {
@@ -1161,12 +1173,20 @@ label {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .justify-around {
   justify-content: space-around;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -1183,6 +1203,10 @@ label {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-11 {
@@ -1241,6 +1265,10 @@ label {
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1294,6 +1322,11 @@ label {
   padding-bottom: 0.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1317,8 +1350,20 @@ label {
   padding-bottom: 1.75rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-lg {
@@ -1380,6 +1425,10 @@ label {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }

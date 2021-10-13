@@ -68,6 +68,10 @@
     border: 1px solid #eeeeee;
   }
 
+  .border-blue {
+    border: 1px solid #2aafc0;
+  }
+
   .advantages__left-side {
     background-image: url("../img/2-1.jpg");
   }
