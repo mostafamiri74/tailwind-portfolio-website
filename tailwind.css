@@ -33,8 +33,11 @@
     @apply px-12 py-24 mx-auto text-center;
   }
 
-  .nav-scrolled {
+  nav {
     z-index: 1000;
+  }
+
+  .nav-scrolled {
     @apply text-black bg-white !important;
   }
 
