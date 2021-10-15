@@ -619,6 +619,11 @@ header {
   background-image: url("../img/2-1.jpg");
 }
 
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
 h1 {
   margin-bottom: 1.5rem;
   font-family: ;
@@ -795,6 +800,15 @@ svg {
       url("../img/bg3.jpg");
 }
 
+#comments {
+  background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../img/bg4.jpg");
+}
+
 .btn {
   --tw-bg-opacity: 1;
   background-color: rgba(42, 175, 192, var(--tw-bg-opacity));
@@ -877,6 +891,11 @@ label {
   content: "-";
   font-size: 1.8rem;
   color: white; /*.text-grey-lightest*/
+}
+
+.slider-btns {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
 
 .container {
@@ -1000,6 +1019,11 @@ label {
   margin-right: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1065,6 +1089,10 @@ label {
   width: 33.333333%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -1075,6 +1103,10 @@ label {
 
 .w-2\/5 {
   width: 40%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
 }
 
 .w-11\/12 {
@@ -1177,6 +1209,10 @@ label {
   align-items: flex-start;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -1195,6 +1231,10 @@ label {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-7 {
@@ -1219,6 +1259,10 @@ label {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-full {
@@ -1267,6 +1311,10 @@ label {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-5 {
@@ -1346,6 +1394,10 @@ label {
   padding-top: 12rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -1364,6 +1416,11 @@ label {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-lg {
@@ -1409,6 +1466,11 @@ label {
 
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

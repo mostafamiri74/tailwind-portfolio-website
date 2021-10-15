@@ -76,6 +76,11 @@
     background-image: url("../img/2-1.jpg");
   }
 
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+
   h1 {
     @apply mb-6 text-3xl sm:text-5xl xl:text-6xl font-headline dark:text-yellow-200;
   }
@@ -110,6 +115,14 @@
         rgba(0, 0, 0, 0.8)
       ),
       url("../img/bg3.jpg");
+  }
+  #comments {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../img/bg4.jpg");
   }
 
   .btn {
@@ -174,5 +187,9 @@
     content: "-";
     font-size: 1.8rem;
     color: white; /*.text-grey-lightest*/
+  }
+
+  .slider-btns {
+    @apply text-white !important;
   }
 }
