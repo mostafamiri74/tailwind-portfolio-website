@@ -203,7 +203,8 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type='button'] {
+[type='button'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -573,6 +574,7 @@ header {
 }
 
 .nav-scrolled {
+  z-index: 1000;
   --tw-bg-opacity: 1 !important;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
   --tw-text-opacity: 1 !important;
@@ -590,6 +592,17 @@ header {
 
 .skills__right-side {
   background-image: url("../img/1.jpg");
+}
+
+.information__right-side {
+  background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../img/bg3.jpg");
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
 
 .primary-gradient,
@@ -622,6 +635,20 @@ header {
 .swiper {
   width: 100%;
   height: auto;
+}
+
+footer {
+  background-color: #111111;
+}
+
+input,
+  textarea {
+  background-color: #f4f4f4;
+  padding: 0.8rem;
+}
+
+input, textarea {
+  border-radius: 0.75rem;
 }
 
 h1 {
@@ -789,6 +816,13 @@ svg {
   line-height: 2.5rem !important;
   --tw-text-opacity: 1 !important;
   color: rgba(42, 175, 192, var(--tw-text-opacity)) !important;
+}
+
+.small-icon {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
 
 #achievements {
@@ -1001,10 +1035,6 @@ label {
   left: 0px;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -1061,6 +1091,10 @@ label {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -1073,8 +1107,16 @@ label {
   height: 1.25rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-80 {
@@ -1101,8 +1143,16 @@ label {
   width: 75%;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
 .w-2\/5 {
   width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-1\/6 {
@@ -1209,6 +1259,10 @@ label {
   align-items: flex-start;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1229,6 +1283,10 @@ label {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1243,6 +1301,10 @@ label {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
 }
 
 .gap-10 {
@@ -1291,6 +1353,10 @@ label {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
 }
 
 .bg-cover {
@@ -1385,9 +1451,19 @@ label {
   padding-bottom: 2rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pt-48 {

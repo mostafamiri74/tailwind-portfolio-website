@@ -34,6 +34,7 @@
   }
 
   .nav-scrolled {
+    z-index: 1000;
     @apply text-black bg-white !important;
   }
 
@@ -47,6 +48,16 @@
 
   .skills__right-side {
     background-image: url("../img/1.jpg");
+  }
+
+  .information__right-side {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../img/bg3.jpg");
+    @apply text-white !important;
   }
 
   .primary-gradient,
@@ -81,6 +92,17 @@
     height: auto;
   }
 
+  footer {
+    background-color: #111111;
+  }
+
+  input,
+  textarea {
+    background-color: #f4f4f4;
+    padding: 0.8rem;
+    @apply rounded-xl;
+  }
+
   h1 {
     @apply mb-6 text-3xl sm:text-5xl xl:text-6xl font-headline dark:text-yellow-200;
   }
@@ -106,6 +128,10 @@
   }
   svg {
     @apply text-4xl text-primaryColor self-center !important;
+  }
+
+  .small-icon {
+    @apply text-white text-base !important;
   }
 
   #achievements {
