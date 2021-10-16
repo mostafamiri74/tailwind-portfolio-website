@@ -1,23 +1,72 @@
 const nav = document.getElementById("nav");
 const logoImg = document.querySelector(".logo-img");
+const navItem = document.querySelectorAll(".nav__item");
+
+const about = document.getElementById("about");
+const skills = document.getElementById("skills");
+const services = document.getElementById("services");
+const achievements = document.getElementById("achievements");
+const portfolio = document.getElementById("portfolio");
+const advantages = document.getElementById("advantages");
+const team = document.getElementById("team");
+const comments = document.getElementById("comments");
+const blog = document.getElementById("blog");
+const information = document.getElementById("information");
+const connection = document.getElementById("connection");
 
 window.addEventListener("scroll", navControl);
 
 function navControl(e) {
-  const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-  if (scroll && scroll >= 100) {
+  const scroll =
+    (document.documentElement.scrollTop || document.body.scrollTop) + 100;
+  if (scroll && scroll >= 200) {
     nav.classList.add("nav-scrolled");
     logoImg.src = "img/logo-dark.png";
-    console.log(logoImg.src);
-    // for (let l of link) {
-    //   l.classList.add("nav-scrolled__link");
-    // }
   } else {
     nav.classList.remove("nav-scrolled");
     logoImg.src = "img/logo-light.png";
-    // for (let l of link) {
-    //   l.classList.remove("nav-scroll__link");
-    // }
+  }
+  console.log(scroll);
+  console.log(about.offsetTop);
+  console.log(skills.offsetTop);
+  console.log(services.offsetTop);
+
+  if (scroll < about.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[0].classList.add("text-primaryColor");
+  } else if (about.offsetTop < scroll && scroll <= skills.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[1].classList.add("text-primaryColor");
+  } else if (skills.offsetTop < scroll && scroll <= services.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[2].classList.add("text-primaryColor");
+  } else if (services.offsetTop < scroll && scroll <= achievements.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[3].classList.add("text-primaryColor");
+  } else if (achievements.offsetTop < scroll && scroll <= portfolio.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[4].classList.add("text-primaryColor");
+  } else if (portfolio.offsetTop < scroll && scroll <= advantages.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[5].classList.add("text-primaryColor");
+  } else if (advantages.offsetTop < scroll && scroll <= team.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[6].classList.add("text-primaryColor");
+  } else if (team.offsetTop < scroll && scroll <= comments.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[7].classList.add("text-primaryColor");
+  } else if (comments.offsetTop < scroll && scroll <= blog.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[8].classList.add("text-primaryColor");
+  } else if (blog.offsetTop < scroll && scroll <= information.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[9].classList.add("text-primaryColor");
+  } else if (information.offsetTop < scroll && scroll <= connection.offsetTop) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[10].classList.add("text-primaryColor");
+  } else if (connection.offsetTop < scroll && scroll) {
+    navItem.forEach((item) => item.classList.remove("text-primaryColor"));
+    navItem[11].classList.add("text-primaryColor");
   }
 }
 

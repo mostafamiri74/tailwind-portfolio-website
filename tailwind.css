@@ -15,6 +15,10 @@
     font-weight: 700;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: byekan;
     @apply overflow-x-hidden;

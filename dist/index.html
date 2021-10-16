@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Project</title>
+    <title>Mostafa Miri | portfolio page with tailwind and js</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/isolde.css" />
@@ -51,37 +51,40 @@
     >
       <ul class="flex flex-row gap-7">
         <li class="nav__item-active">
-          <a href="#" class="text-primaryColor">خانه</a>
+          <a href="#" class="nav__item text-primaryColor">خانه</a>
         </li>
         <li class="">
-          <a href="#" class="">درباره ما</a>
+          <a href="#about" class="nav__item">درباره ما</a>
         </li>
         <li class="">
-          <a href="#" class="">مهارت ها</a>
+          <a href="#skills" class="nav__item">مهارت ها</a>
         </li>
         <li class="">
-          <a href="#" class="">خدمات</a>
+          <a href="#services" class="nav__item">خدمات</a>
         </li>
         <li class="">
-          <a href="#" class="">دستاورد ها</a>
+          <a href="#achievements" class="nav__item">دستاورد ها</a>
         </li>
         <li class="">
-          <a href="#" class="">نمونه کارها</a>
+          <a href="#portfolio" class="nav__item">نمونه کارها</a>
         </li>
         <li class="">
-          <a href="#" class="">تیم</a>
+          <a href="#advantages" class="nav__item">برتری ها</a>
         </li>
         <li class="">
-          <a href="#" class="">قیمت ها</a>
+          <a href="#team" class="nav__item">تیم</a>
         </li>
         <li class="">
-          <a href="#" class="">دیدگاه ها</a>
+          <a href="#comments" class="nav__item">دیدگاه ها</a>
         </li>
         <li class="">
-          <a href="#" class="">مشتریان</a>
+          <a href="#blog" class="nav__item">بلاگ</a>
         </li>
         <li class="">
-          <a href="#" class="">تماس</a>
+          <a href="#information" class="nav__item">آدرس</a>
+        </li>
+        <li class="">
+          <a href="#connection" class="nav__item">تماس</a>
         </li>
       </ul>
       <h1 class="m-0">
@@ -97,7 +100,7 @@
       class="relative flex flex-col h-screen gap-8 pt-48 text-center text-white bg-center bg-cover "
     >
       <p class="text-2xl text-white">ما خلاق هستیم</p>
-      <h2 class="text-6xl">شرکت دیجیتالی خلاق</h2>
+      <h2 class="text-5xl md:text-6xl">شرکت دیجیتالی خلاق</h2>
       <p class="self-center w-1/3 text-lg text-white">
         با بیش از ۱۰ سال سابقه کار و فعال حوزه استارت آپ و طراح بیش از ۵۰ سایت
         هستم.
@@ -123,8 +126,9 @@
           </p>
         </div>
         <div class="flex flex-col justify-around gap-5 md:flex-row">
-          <div class="flex flex-col gap-5 px-3 py-6">
-            <span class="p-5 border-2 border-gray-100 rounded-full"
+          <div class="flex flex-col items-center gap-5 px-3 py-6">
+            <span
+              class="flex justify-center w-20 h-20 border-2 border-gray-100 rounded-full "
               ><i class="far fa-pencil-paintbrush"></i
             ></span>
             <h3>طراحی خلاقانه</h3>
@@ -133,8 +137,9 @@
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
             </p>
           </div>
-          <div class="flex flex-col gap-5 px-3 py-6">
-            <span class="p-5 border-2 border-gray-100 rounded-full"
+          <div class="flex flex-col items-center gap-5 px-3 py-6">
+            <span
+              class="flex justify-center w-20 h-20 border-2 border-gray-100 rounded-full "
               ><i class="far fa-crown"></i
             ></span>
             <h3>برند سازی</h3>
@@ -143,8 +148,9 @@
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
             </p>
           </div>
-          <div class="flex flex-col gap-5 px-3 py-6">
-            <span class="p-5 border-2 border-gray-100 rounded-full"
+          <div class="flex flex-col items-center gap-5 px-3 py-6">
+            <span
+              class="flex justify-center w-20 h-20 border-2 border-gray-100 rounded-full "
               ><i class="far fa-desktop"></i
             ></span>
             <h3>طراحی وبسایت</h3>
@@ -159,9 +165,11 @@
     <!-- end about section -->
 
     <!-- begin skills section -->
-    <section id="skills" class="flex flex-row">
-      <div class="w-1/2 bg-center bg-cover skills__right-side"></div>
-      <div class="w-1/2 p-8 bg-gray-100 skills__left-side">
+    <section id="skills" class="flex flex-col lg:flex-row">
+      <div
+        class="bg-center bg-cover lg:w-1/2 h-96 lg:h-auto skills__right-side"
+      ></div>
+      <div class="p-8 bg-gray-100 lg:w-1/2 skills__left-side">
         <div class="flex flex-col gap-3 px-16 py-20 bg-white shadow">
           <h2>تلاش ما همواره ارائه خدمات باکیفیت است.</h2>
           <p class="mb-3">
@@ -201,7 +209,7 @@
           <p class="title-text">خدماتی که ارائه می‌دهیم</p>
         </div>
         <div
-          class="flex flex-row justify-around  border-bottom pb-7 mb-7 md:flex-row"
+          class="flex flex-col justify-around  md:flex-row md:border-bottom md:pb-7 md:mb-7"
         >
           <div class="flex flex-col px-10 my-6 gap-7">
             <i class="far fa-pencil-paintbrush"></i>
@@ -211,7 +219,7 @@
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
             </p>
           </div>
-          <div class="flex flex-col px-10 my-6 gap-7 border-x">
+          <div class="flex flex-col px-10 my-6 gap-7 md:border-x">
             <i class="far fa-crown"></i>
             <h3>تجربه کاربر</h3>
             <p>
@@ -228,7 +236,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-row justify-around md:flex-row">
+        <div class="flex flex-col justify-around md:flex-row">
           <div class="flex flex-col px-10 my-6 gap-7">
             <i class="far fa-smile"></i>
             <h3>مناسب رتینا</h3>
@@ -237,7 +245,7 @@
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه نیز هستند.
             </p>
           </div>
-          <div class="flex flex-col px-10 my-6 gap-7 border-x">
+          <div class="flex flex-col px-10 my-6 gap-7 md:border-x">
             <i class="far fa-tablet"></i>
             <h3>کاملا واکنشگرا</h3>
             <p>
@@ -261,23 +269,25 @@
     <!-- begin achievements section -->
     <section id="achievements" class="bg-fixed bg-center bg-cover">
       <div class="container">
-        <div class="flex flex-row justify-around text-white md:flex-row">
-          <div class="flex flex-col gap-11">
+        <div
+          class="flex flex-col justify-around gap-12 text-white  md:gap-0 md:flex-row"
+        >
+          <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-smile"></i>
             <h3 class="text-6xl">۳۶۸</h3>
             <h3>مشتریان راضی</h3>
           </div>
-          <div class="flex flex-col gap-11">
+          <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-file-check"></i>
             <h3 class="text-6xl">۴۱۰</h3>
             <h3>پروژه انجام شده</h3>
           </div>
-          <div class="flex flex-col gap-11">
+          <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-file-alt"></i>
             <h3 class="text-6xl">۹۳</h3>
             <h3>دریافت فایل</h3>
           </div>
-          <div class="flex flex-col gap-11">
+          <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-code"></i>
             <h3 class="text-6xl">۲۳۶۸</h3>
             <h3>خط کد</h3>
@@ -415,8 +425,8 @@
     <!-- end portfolio section -->
 
     <!-- begin advantages section -->
-    <section id="advantages" class="flex flex-row">
-      <div class="w-1/2 p-8 bg-gray-100">
+    <section id="advantages" class="flex flex-col lg:flex-row">
+      <div class="p-8 bg-gray-100 lg:w-1/2">
         <div class="flex flex-col gap-3 px-16 py-20 bg-white shadow">
           <h2>چرا ما را انتخاب کنید؟</h2>
           <p class="mb-3">
@@ -490,7 +500,9 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2 bg-center bg-cover advantages__left-side"></div>
+      <div
+        class="bg-center bg-cover h-96 lg:h-auto lg:w-1/2 advantages__left-side"
+      ></div>
     </section>
     <!-- end advantages section -->
 
@@ -502,7 +514,7 @@
           <p class="title-text">تیمی با مهارت و تخصص</p>
         </div>
         <div class="">
-          <div class="flex flex-col gap-10 mb-0 md:flex-row md:mb-12">
+          <div class="flex flex-col gap-10 mb-10 lg:flex-row md:mb-12">
             <div class="flex flex-row gap-5 p-2 rounded-full pl-7 border-blue">
               <div class="w-80">
                 <img src="img/1-2-200x200.jpg" class="rounded-full" />
@@ -530,7 +542,7 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-10 md:flex-row">
+          <div class="flex flex-col gap-10 lg:flex-row">
             <div class="flex flex-row gap-5 p-2 rounded-full pl-7 border-blue">
               <div class="w-80">
                 <img src="img/2-2-200x200.jpg" class="rounded-full" />
@@ -565,7 +577,7 @@
 
     <!-- begin comments section -->
     <section id="comments" class="text-white bg-fixed bg-center bg-cover">
-      <div class="container w-2/3">
+      <div class="container lg:w-2/3">
         <div class="my-5 swiper">
           <div class="swiper-wrapper">
             <div class="flex flex-col justify-center gap-5 swiper-slide">
@@ -618,7 +630,7 @@
 
     <!-- begin blog section -->
     <section id="blog">
-      <div class="container">
+      <div class="container px-0 lg:px-12">
         <div class="title-box">
           <h2>بلاگ ما</h2>
           <p class="title-text">آخرین اخبار</p>
@@ -657,9 +669,9 @@
     <!-- end blog section -->
 
     <!-- begin information section -->
-    <section id="information" class="flex flex-row">
+    <section id="information" class="flex flex-col lg:flex-row">
       <div
-        class="flex flex-col w-1/2 px-20 py-32 bg-center bg-cover  gap-9 information__right-side"
+        class="flex flex-col px-20 py-32 bg-center bg-cover  lg:w-1/2 gap-9 information__right-side"
       >
         <div class="flex flex-row gap-8">
           <i class="far fa-mobile"></i>
@@ -669,7 +681,7 @@
           </div>
         </div>
         <div class="flex flex-row gap-8">
-          <i class="far fa-mobile"></i>
+          <i class="far fa-envelope"></i>
           <div>
             <h5 class="">ایمیل :</h5>
             <p class="text-white">email@youraddress.com</p>
@@ -677,7 +689,7 @@
           </div>
         </div>
         <div class="flex flex-row gap-8">
-          <i class="far fa-mobile"></i>
+          <i class="far fa-location"></i>
           <div>
             <h5 class="">آدرس :</h5>
             <p class="text-white">
@@ -687,7 +699,10 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2 information__left-side" id="map"></div>
+      <div
+        class="lg:w-1/2 h-96 lg:h-auto information__left-side"
+        id="map"
+      ></div>
     </section>
     <!-- end information section -->
 
@@ -698,7 +713,7 @@
           <h2>تماس با ما</h2>
           <p class="title-text">با ما در ارتباط باشید</p>
         </div>
-        <form action="" class="flex flex-col w-3/5 gap-6 mx-auto">
+        <form action="" class="flex flex-col p-6 mx-auto gap-7 lg:w-3/5">
           <div class="flex flex-row gap-5">
             <input type="text" class="inline w-1/2" placeholder="نام *" />
             <input type="text" class="inline w-1/2" placeholder="ایمیل *" />
@@ -711,7 +726,11 @@
             rows="10"
             placeholder="پیام *"
           ></textarea>
-          <input type="submit" class="primary-gradient" value="ارسال پیام" />
+          <input
+            type="submit"
+            class="cursor-pointer primary-gradient"
+            value="ارسال پیام"
+          />
         </form>
       </div>
     </section>
@@ -719,7 +738,7 @@
 
     <footer>
       <div class="container py-16">
-        <div class="flex flex-col items-center w-1/5 mx-auto gap-7">
+        <div class="flex flex-col items-center mx-auto gap-7">
           <img class="w-min" src="img/logo-light.png" alt="one pucture" />
           <div class="flex flex-row gap-4">
             <span

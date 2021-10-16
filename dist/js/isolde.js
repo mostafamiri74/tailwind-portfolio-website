@@ -9,7 +9,7 @@ class isolde {
         columns: 4,
       },
       480: {
-        columns: 3,
+        columns: 2,
       },
       0: {
         columns: 1,
