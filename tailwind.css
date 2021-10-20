@@ -225,4 +225,73 @@
   .slider-btns {
     @apply text-white !important;
   }
+
+  .hamburger-box {
+    @apply block lg:hidden lg:fixed;
+  }
+
+  .hamburger-checkbox {
+    position: absolute;
+    top: 17px;
+    right: 24px;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: all 1s linear;
+  }
+
+  .hamburger-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s linear;
+  }
+  .hamburger-btn > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+
+  .hamburger-btn > div:before,
+  .hamburger-btn > div:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+  }
+
+  .hamburger-btn > div:after {
+    top: 10px;
+  }
+
+  .hamburger-checkbox:checked + .hamburger-btn > div {
+    transform: rotate(135deg);
+  }
+
+  .hamburger-checkbox:checked + .hamburger-btn > div:before,
+  .hamburger-checkbox:checked + .hamburger-btn > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .hamburger-checkbox:checked:hover + .hamburger-btn > div {
+    transform: rotate(225);
+  }
 }

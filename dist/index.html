@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/isolde.css" />
-    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -30,10 +28,8 @@
       defer
       src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
     ></script>
-    <!-- <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/owl.carousel.min.js"></script> -->
     <script defer type="module">
-      import isolde from "./js/isolde.js";
+      import isolde from "../dist/js/isolde.js";
       const isoldejs = new isolde();
     </script>
     <script
@@ -42,14 +38,23 @@
     ></script>
     <script defer src="js/app.js"></script>
     <script defer src="js/all.min.js"></script>
+    <script defer src="js/purecounter.js"></script>
   </head>
   <body class="debug-screens" dir="rtl">
     <!-- begin navbar -->
     <nav
-      class="fixed top-0 left-0 right-0 flex flex-row justify-between px-20 py-8 text-white  nav-scrolled"
+      class="fixed top-0 left-0 right-0 flex flex-row justify-between px-16 py-8 text-white nav-scrolled"
       id="nav"
     >
-      <ul class="flex flex-row gap-7">
+      <div class="hamburger-box">
+        <input type="checkbox" class="hamburger-checkbox" id="checkbox" />
+        <div class="hamburger-btn">
+          <div></div>
+        </div>
+      </div>
+      <ul
+        class="fixed flex-col items-center justify-center hidden w-4/5 gap-6 py-8 bg-gray-800 lg:w-auto lg:justify-start overflow-y-scroll-scroll nav__list lg:bg-transparent lg:flex lg:flex-row lg:static top-20 lg:py-0 left-24"
+      >
         <li class="nav__item-active">
           <a href="#" class="nav__item text-primaryColor">خانه</a>
         </li>
@@ -209,7 +214,7 @@
           <p class="title-text">خدماتی که ارائه می‌دهیم</p>
         </div>
         <div
-          class="flex flex-col justify-around  md:flex-row md:border-bottom md:pb-7 md:mb-7"
+          class="flex flex-col justify-around md:flex-row md:border-bottom md:pb-7 md:mb-7"
         >
           <div class="flex flex-col px-10 my-6 gap-7">
             <i class="far fa-pencil-paintbrush"></i>
@@ -270,26 +275,54 @@
     <section id="achievements" class="bg-fixed bg-center bg-cover">
       <div class="container">
         <div
-          class="flex flex-col justify-around gap-12 text-white  md:gap-0 md:flex-row"
+          class="flex flex-col justify-around gap-12 text-white md:gap-0 md:flex-row"
         >
           <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-smile"></i>
-            <h3 class="text-6xl">۳۶۸</h3>
+            <h3
+              class="text-6xl purecounter"
+              data-purecounter-start="0"
+              data-purecounter-end="93"
+              data-purecounter-once="false"
+            >
+              0
+            </h3>
             <h3>مشتریان راضی</h3>
           </div>
           <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-file-check"></i>
-            <h3 class="text-6xl">۴۱۰</h3>
+            <h3
+              class="text-6xl purecounter"
+              data-purecounter-start="0"
+              data-purecounter-end="183"
+              data-purecounter-once="false"
+            >
+              0
+            </h3>
             <h3>پروژه انجام شده</h3>
           </div>
           <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-file-alt"></i>
-            <h3 class="text-6xl">۹۳</h3>
+            <h3
+              class="text-6xl purecounter"
+              data-purecounter-start="0"
+              data-purecounter-end="410"
+              data-purecounter-once="false"
+            >
+              0
+            </h3>
             <h3>دریافت فایل</h3>
           </div>
           <div class="flex flex-col gap-3 md:gap-11">
             <i class="far fa-code"></i>
-            <h3 class="text-6xl">۲۳۶۸</h3>
+            <h3
+              class="text-6xl purecounter"
+              data-purecounter-start="0"
+              data-purecounter-end="2150"
+              data-purecounter-once="false"
+            >
+              0
+            </h3>
             <h3>خط کد</h3>
           </div>
         </div>
@@ -306,7 +339,7 @@
         </div>
         <div class="mb-14">
           <ul
-            class="flex flex-row gap-8 px-6 py-3 mx-auto rounded-full  w-min border-gray"
+            class="flex flex-row gap-8 px-6 py-3 mx-auto rounded-full w-min border-gray"
           >
             <li class="">
               <a
@@ -445,7 +478,7 @@
                 checked
               />
               <label
-                class="block p-5 font-bold leading-normal rounded-full cursor-pointer  text-large"
+                class="block p-5 font-bold leading-normal rounded-full cursor-pointer text-large"
                 for="tab-single-one"
                 >شناسایی منبع مشکل</label
               >
@@ -465,7 +498,7 @@
                 name="tabs2"
               />
               <label
-                class="block p-5 font-bold leading-normal rounded-full cursor-pointer  text-large"
+                class="block p-5 font-bold leading-normal rounded-full cursor-pointer text-large"
                 for="tab-single-two"
                 >حفاظت از نام تجاری</label
               >
@@ -485,7 +518,7 @@
                 name="tabs2"
               />
               <label
-                class="block p-5 font-bold leading-normal rounded-full cursor-pointer  text-large"
+                class="block p-5 font-bold leading-normal rounded-full cursor-pointer text-large"
                 for="tab-single-three"
                 >ما خلاق و حرفه‌ای هستیم</label
               >
@@ -516,7 +549,7 @@
         <div class="">
           <div class="flex flex-col gap-10 mb-10 lg:flex-row md:mb-12">
             <div class="flex flex-row gap-5 p-2 rounded-full pl-7 border-blue">
-              <div class="w-80">
+              <div class="self-center w-80">
                 <img src="img/1-2-200x200.jpg" class="rounded-full" />
               </div>
               <div class="flex flex-col items-start gap-2 py-5 pl-5">
@@ -529,7 +562,7 @@
               </div>
             </div>
             <div class="flex flex-row gap-5 p-2 rounded-full pl-7 border-blue">
-              <div class="w-80">
+              <div class="self-center w-80">
                 <img src="img/2-2-200x200.jpg" class="rounded-full" />
               </div>
               <div class="flex flex-col items-start gap-2 py-5 pl-5">
@@ -544,7 +577,7 @@
           </div>
           <div class="flex flex-col gap-10 lg:flex-row">
             <div class="flex flex-row gap-5 p-2 rounded-full pl-7 border-blue">
-              <div class="w-80">
+              <div class="self-center w-80">
                 <img src="img/2-2-200x200.jpg" class="rounded-full" />
               </div>
               <div class="flex flex-col items-start gap-2 py-5 pl-5">
@@ -557,7 +590,7 @@
               </div>
             </div>
             <div class="flex flex-row gap-5 p-2 rounded-full pl-7 border-blue">
-              <div class="w-80">
+              <div class="self-center w-80">
                 <img src="img/3-1-200x200.jpg" class="rounded-full" />
               </div>
               <div class="flex flex-col items-start gap-2 py-5 pl-5">
@@ -671,7 +704,7 @@
     <!-- begin information section -->
     <section id="information" class="flex flex-col lg:flex-row">
       <div
-        class="flex flex-col px-20 py-32 bg-center bg-cover  lg:w-1/2 gap-9 information__right-side"
+        class="flex flex-col px-20 py-32 bg-center bg-cover lg:w-1/2 gap-9 information__right-side"
       >
         <div class="flex flex-row gap-8">
           <i class="far fa-mobile"></i>
@@ -742,23 +775,23 @@
           <img class="w-min" src="img/logo-light.png" alt="one pucture" />
           <div class="flex flex-row gap-4">
             <span
-              class="flex justify-center w-10 h-10 bg-white rounded-full  bg-opacity-10"
+              class="flex justify-center w-10 h-10 bg-white rounded-full bg-opacity-10"
               ><i class="small-icon fab fa-linkedin"></i
             ></span>
             <span
-              class="flex justify-center w-10 h-10 bg-white rounded-full  bg-opacity-10"
+              class="flex justify-center w-10 h-10 bg-white rounded-full bg-opacity-10"
               ><i class="small-icon fab fa-facebook"></i
             ></span>
             <span
-              class="flex justify-center w-10 h-10 bg-white rounded-full  bg-opacity-10"
+              class="flex justify-center w-10 h-10 bg-white rounded-full bg-opacity-10"
               ><i class="small-icon fab fa-twitter"></i
             ></span>
             <span
-              class="flex justify-center w-10 h-10 bg-white rounded-full  bg-opacity-10"
+              class="flex justify-center w-10 h-10 bg-white rounded-full bg-opacity-10"
               ><i class="small-icon fab fa-telegram"></i
             ></span>
             <span
-              class="flex justify-center w-10 h-10 bg-white rounded-full  bg-opacity-10"
+              class="flex justify-center w-10 h-10 bg-white rounded-full bg-opacity-10"
               ><i class="small-icon fab fa-instagram"></i
             ></span>
           </div>

@@ -13,6 +13,9 @@ const comments = document.getElementById("comments");
 const blog = document.getElementById("blog");
 const information = document.getElementById("information");
 const connection = document.getElementById("connection");
+const menuCheckbox = document.getElementById("checkbox");
+let navList = document.querySelector(".nav__list");
+const hamburgerBtn = document.getElementsByClassName("hamburger-btn");
 
 window.addEventListener("scroll", navControl);
 
@@ -26,10 +29,6 @@ function navControl(e) {
     nav.classList.remove("nav-scrolled");
     logoImg.src = "img/logo-light.png";
   }
-  console.log(scroll);
-  console.log(about.offsetTop);
-  console.log(skills.offsetTop);
-  console.log(services.offsetTop);
 
   if (scroll < about.offsetTop) {
     navItem.forEach((item) => item.classList.remove("text-primaryColor"));
@@ -120,3 +119,36 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 L.marker([51.5, -0.09]).addTo(map).openPopup();
+
+////////////open menu with checkbox
+
+menuCheckbox.onchange = function (event) {
+  if (event.target.checked) {
+    navList.classList.remove("hidden");
+    navList.classList.add("flex");
+  } else {
+    navList.classList.remove("flex");
+    navList.classList.add("hidden");
+  }
+};
+
+////////////change menubutton & menu with resize
+
+window.addEventListener("resize", (event) => {
+  const vw = document.documentElement.clientWidth;
+  if (vw > 1030) {
+    menuCheckbox.checked = false;
+    navList.classList.add("hidden");
+  }
+});
+
+navItem.forEach((item) => item.addEventListener("click", closeNav));
+
+function closeNav() {
+  const vw = document.documentElement.clientWidth;
+  if (vw < 1030) {
+    navList.classList.remove("flex");
+    navList.classList.add("hidden");
+    menuCheckbox.checked = false;
+  }
+}
