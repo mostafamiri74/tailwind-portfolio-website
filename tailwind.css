@@ -5,13 +5,13 @@
 @layer base {
   @font-face {
     font-family: "byekan";
-    src: url("/dist/fonts/byekan.ttf") format("truetype");
+    src: url("./fonts/byekan.ttf") format("truetype");
     font-weight: 400;
   }
 
   @font-face {
     font-family: "byekan";
-    src: url("/dist/fonts/byekan-bold.ttf") format("truetype");
+    src: url("./fonts/byekan-bold.ttf") format("truetype");
     font-weight: 700;
   }
 
